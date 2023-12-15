@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "@nathalyaricci/eslint-config/next"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  }
+}
