@@ -2,11 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 import Home from "./pages/Home"
 import Container from "./components/layout/Container"
+import Navbar from "./components/layout/Navbar"
 
 function App() {
   return (
     <Router>
-      {/* Navbar */}
+      <Navbar />
       <Container customClass="minHeight">
         <Routes>
           <Route path="/" element={<Home />} />
