@@ -1,43 +1,41 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
+import Home from "./pages/Home"
+import Container from "./components/layout/Container"
+
 function App() {
   return (
     <Router>
       {/* Navbar */}
-      <Routes>
-        <Route
-          path="/"
-          element={
-            {
-              /* <Home /> */
+      <Container customClass="minHeight">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/company"
+            element={
+              {
+                /* <Company /> */
+              }
             }
-          }
-        />
-        <Route
-          path="/company"
-          element={
-            {
-              /* <Company /> */
+          />
+          <Route
+            path="/contact"
+            element={
+              {
+                /* <Contact /> */
+              }
             }
-          }
-        />
-        <Route
-          path="/contact"
-          element={
-            {
-              /* <Contact /> */
+          />
+          <Route
+            path="/new-project"
+            element={
+              {
+                /* <NewProject /> */
+              }
             }
-          }
-        />
-        <Route
-          path="/new-project"
-          element={
-            {
-              /* <NewProject /> */
-            }
-          }
-        />
-      </Routes>
+          />
+        </Routes>
+      </Container>
       {/* Footer */}
     </Router>
   )
