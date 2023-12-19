@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 import Home from "./pages/Home"
 import NewProject from "./pages/NewProject"
+import Projects from "./pages/Projects"
 
 import Container from "./components/layout/Container"
 import Navbar from "./components/layout/Navbar"
@@ -14,14 +15,7 @@ function App() {
       <Container customClass="minHeight">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route
-            path="/projects"
-            element={
-              {
-                /* <Projects /> */
-              }
-            }
-          />
+          <Route path="/projects" element={<Projects />} />
           <Route
             path="/company"
             element={
